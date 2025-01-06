@@ -1,0 +1,325 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar .logo h2 {
+  color: #fff;
+}
+
+.navbar nav ul {
+  display: flex;
+}
+
+.navbar nav ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: #ff7200;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/bg5.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', serif;
+}
+.hero-content{
+   text-align: left;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #ff7200;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e56e00;
+}
+
+/* About Us Section */
+.about {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ff7200;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn-secondary {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #555;
+}
+
+/* Featured Products Section */
+.featured-products {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.featured-products h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.product-card .btn-secondary {
+  background-color: #ff7200;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+/* Design Section */
+.designs {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.designs .container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.designs h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.designs p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.design-gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.design-card {
+  width: 30%;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.design-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.design-card h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.design-card p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Home Decor Collection Section */
+.home-decor-collection {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.home-decor-collection .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home-decor-collection h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card .image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.product-card .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card .details {
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card .details h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card .details .price {
+  color: #ff7200;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer .social-links a:hover {
+  color: #ff7200;
+}
